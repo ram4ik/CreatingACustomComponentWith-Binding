@@ -9,8 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var rememberMe = false
+    
     var body: some View {
-        Text("Hello World")
+        Toggle(isOn: $rememberMe) {
+            Text("Remember Me")
+        }
     }
 }
 
